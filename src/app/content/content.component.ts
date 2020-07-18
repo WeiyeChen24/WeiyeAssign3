@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent{
 
-  sidenum;
+  side;
 
   constructor(){
     this.getRandomDice();
   }
   
   getRandomDice(){
-    this.sidenum = Math.floor(Math.random() * 6 + 1);
+    this.side = Math.floor(Math.random() * 6 + 1);
   }
 
 }
