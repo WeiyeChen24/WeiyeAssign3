@@ -5,11 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent implements OnInit {
+export class ContentComponent{
 
-  constructor() { }
+  sidenum;
 
-  ngOnInit(): void {
+  constructor(){
+    this.getRandomDice();
+  }
+  
+  getRandomDice(){
+    this.sidenum = Math.floor(Math.random() * 6 + 1);
   }
 
 }
